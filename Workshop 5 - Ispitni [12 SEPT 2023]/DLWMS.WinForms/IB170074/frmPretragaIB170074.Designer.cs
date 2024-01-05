@@ -54,79 +54,83 @@
             cbOcjenaOd.DropDownStyle = ComboBoxStyle.DropDownList;
             cbOcjenaOd.FormattingEnabled = true;
             cbOcjenaOd.Items.AddRange(new object[] { "6", "7", "8", "9", "10" });
-            cbOcjenaOd.Location = new Point(122, 12);
+            cbOcjenaOd.Location = new Point(78, 9);
+            cbOcjenaOd.Margin = new Padding(3, 2, 3, 2);
             cbOcjenaOd.Name = "cbOcjenaOd";
-            cbOcjenaOd.Size = new Size(84, 28);
+            cbOcjenaOd.Size = new Size(74, 23);
             cbOcjenaOd.TabIndex = 0;
             cbOcjenaOd.SelectedIndexChanged += cbOcjenaOd_SelectedIndexChanged;
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(12, 15);
+            label1.Location = new Point(10, 11);
             label1.Name = "label1";
-            label1.Size = new Size(13, 20);
+            label1.Size = new Size(10, 15);
             label1.TabIndex = 1;
             label1.Text = " ";
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(12, 15);
+            label2.Location = new Point(10, 11);
             label2.Name = "label2";
-            label2.Size = new Size(77, 20);
+            label2.Size = new Size(61, 15);
             label2.TabIndex = 2;
             label2.Text = "Ocjena od";
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(244, 15);
+            label3.Location = new Point(163, 11);
             label3.Name = "label3";
-            label3.Size = new Size(27, 20);
+            label3.Size = new Size(21, 15);
             label3.TabIndex = 2;
             label3.Text = "do";
             // 
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(416, 15);
+            label4.Location = new Point(289, 11);
             label4.Name = "label4";
-            label4.Size = new Size(161, 20);
+            label4.Size = new Size(126, 15);
             label4.TabIndex = 2;
             label4.Text = "polozena u periodu od";
             // 
             // dtpDatumOd
             // 
-            dtpDatumOd.Location = new Point(596, 15);
+            dtpDatumOd.Location = new Point(424, 10);
+            dtpDatumOd.Margin = new Padding(3, 2, 3, 2);
             dtpDatumOd.Name = "dtpDatumOd";
-            dtpDatumOd.Size = new Size(250, 27);
+            dtpDatumOd.Size = new Size(219, 23);
             dtpDatumOd.TabIndex = 3;
             dtpDatumOd.ValueChanged += dtpDatumOd_ValueChanged;
             // 
             // dtpDatumDo
             // 
-            dtpDatumDo.Location = new Point(920, 15);
+            dtpDatumDo.Location = new Point(691, 9);
+            dtpDatumDo.Margin = new Padding(3, 2, 3, 2);
             dtpDatumDo.Name = "dtpDatumDo";
-            dtpDatumDo.Size = new Size(250, 27);
+            dtpDatumDo.Size = new Size(219, 23);
             dtpDatumDo.TabIndex = 3;
             dtpDatumDo.ValueChanged += dtpDatumDo_ValueChanged;
             // 
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(869, 19);
+            label5.Location = new Point(657, 14);
             label5.Name = "label5";
-            label5.Size = new Size(27, 20);
+            label5.Size = new Size(21, 15);
             label5.TabIndex = 2;
             label5.Text = "do";
             // 
             // chbAktivan
             // 
             chbAktivan.AutoSize = true;
-            chbAktivan.Location = new Point(1213, 16);
+            chbAktivan.Location = new Point(928, 11);
+            chbAktivan.Margin = new Padding(3, 2, 3, 2);
             chbAktivan.Name = "chbAktivan";
-            chbAktivan.Size = new Size(135, 24);
+            chbAktivan.Size = new Size(110, 19);
             chbAktivan.TabIndex = 4;
             chbAktivan.Text = "Student Aktivan";
             chbAktivan.UseVisualStyleBackColor = true;
@@ -137,9 +141,10 @@
             cbOcjenaDo.DropDownStyle = ComboBoxStyle.DropDownList;
             cbOcjenaDo.FormattingEnabled = true;
             cbOcjenaDo.Items.AddRange(new object[] { "10", "9", "8", "7", "6" });
-            cbOcjenaDo.Location = new Point(299, 12);
+            cbOcjenaDo.Location = new Point(194, 9);
+            cbOcjenaDo.Margin = new Padding(3, 2, 3, 2);
             cbOcjenaDo.Name = "cbOcjenaDo";
-            cbOcjenaDo.Size = new Size(94, 28);
+            cbOcjenaDo.Size = new Size(83, 23);
             cbOcjenaDo.TabIndex = 0;
             cbOcjenaDo.SelectedIndexChanged += cbOcjenaDo_SelectedIndexChanged;
             // 
@@ -149,13 +154,14 @@
             dgvStudentiPredmeti.AllowUserToDeleteRows = false;
             dgvStudentiPredmeti.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgvStudentiPredmeti.Columns.AddRange(new DataGridViewColumn[] { BrojIndeksa, StudentPodaci, PredmetPodaci, Ocjena, Datum, Aktivan, Poruke });
-            dgvStudentiPredmeti.Location = new Point(12, 61);
+            dgvStudentiPredmeti.Location = new Point(10, 43);
+            dgvStudentiPredmeti.Margin = new Padding(3, 2, 3, 2);
             dgvStudentiPredmeti.Name = "dgvStudentiPredmeti";
             dgvStudentiPredmeti.ReadOnly = true;
             dgvStudentiPredmeti.RowHeadersWidth = 51;
             dgvStudentiPredmeti.RowTemplate.Height = 29;
             dgvStudentiPredmeti.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            dgvStudentiPredmeti.Size = new Size(1351, 327);
+            dgvStudentiPredmeti.Size = new Size(1028, 245);
             dgvStudentiPredmeti.TabIndex = 5;
             dgvStudentiPredmeti.CellContentClick += dgvStudentiPredmeti_CellContentClick;
             // 
@@ -225,9 +231,9 @@
             // 
             // frmPretragaIB170074
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1375, 402);
+            ClientSize = new Size(1046, 296);
             Controls.Add(dgvStudentiPredmeti);
             Controls.Add(chbAktivan);
             Controls.Add(dtpDatumDo);
@@ -239,8 +245,10 @@
             Controls.Add(label1);
             Controls.Add(cbOcjenaDo);
             Controls.Add(cbOcjenaOd);
+            Margin = new Padding(3, 2, 3, 2);
             Name = "frmPretragaIB170074";
-            Text = "frmPretragaIB170074";
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "Pretraga studenata";
             Load += frmPretragaIB170074_Load;
             ((System.ComponentModel.ISupportInitialize)dgvStudentiPredmeti).EndInit();
             ResumeLayout(false);

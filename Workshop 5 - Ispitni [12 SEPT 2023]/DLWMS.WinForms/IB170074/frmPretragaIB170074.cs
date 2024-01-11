@@ -130,7 +130,7 @@ namespace DLWMS.WinForms.IB170074
 
             if (e.ColumnIndex == 6)
             {
-
+               
                 frmPorukeIB180079 frmPoruke = new frmPorukeIB180079(OdabraniStudentPredmet.Student); // forma je napravljena
                 frmPoruke.ShowDialog();
 

@@ -71,7 +71,7 @@
             // 
             // btnNovaPoruka
             // 
-            btnNovaPoruka.Location = new Point(729, 8);
+            btnNovaPoruka.Location = new Point(1006, 9);
             btnNovaPoruka.Margin = new Padding(3, 2, 3, 2);
             btnNovaPoruka.Name = "btnNovaPoruka";
             btnNovaPoruka.Size = new Size(164, 22);
@@ -92,7 +92,7 @@
             dgvPoruke.RowHeadersWidth = 51;
             dgvPoruke.RowTemplate.Height = 29;
             dgvPoruke.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            dgvPoruke.Size = new Size(884, 182);
+            dgvPoruke.Size = new Size(1160, 182);
             dgvPoruke.TabIndex = 3;
             dgvPoruke.CellContentClick += dgvPoruke_CellContentClick;
             // 
@@ -153,7 +153,7 @@
             // 
             // btnPrintaj
             // 
-            btnPrintaj.Location = new Point(730, 227);
+            btnPrintaj.Location = new Point(1006, 231);
             btnPrintaj.Margin = new Padding(3, 2, 3, 2);
             btnPrintaj.Name = "btnPrintaj";
             btnPrintaj.Size = new Size(164, 22);
@@ -176,23 +176,23 @@
             groupBox1.Margin = new Padding(3, 2, 3, 2);
             groupBox1.Name = "groupBox1";
             groupBox1.Padding = new Padding(3, 2, 3, 2);
-            groupBox1.Size = new Size(884, 223);
+            groupBox1.Size = new Size(1160, 261);
             groupBox1.TabIndex = 5;
             groupBox1.TabStop = false;
             groupBox1.Text = "Dodavanje poruka";
             // 
             // textBox2
             // 
-            textBox2.Location = new Point(303, 43);
+            textBox2.Location = new Point(326, 56);
             textBox2.Margin = new Padding(3, 2, 3, 2);
             textBox2.Multiline = true;
             textBox2.Name = "textBox2";
-            textBox2.Size = new Size(563, 163);
+            textBox2.Size = new Size(829, 199);
             textBox2.TabIndex = 5;
             // 
             // button1
             // 
-            button1.Location = new Point(5, 184);
+            button1.Location = new Point(5, 232);
             button1.Margin = new Padding(3, 2, 3, 2);
             button1.Name = "button1";
             button1.Size = new Size(264, 22);
@@ -202,7 +202,7 @@
             // 
             // dateTimePicker1
             // 
-            dateTimePicker1.Location = new Point(5, 149);
+            dateTimePicker1.Location = new Point(5, 183);
             dateTimePicker1.Margin = new Padding(3, 2, 3, 2);
             dateTimePicker1.Name = "dateTimePicker1";
             dateTimePicker1.Size = new Size(265, 23);
@@ -211,7 +211,7 @@
             // comboBox1
             // 
             comboBox1.FormattingEnabled = true;
-            comboBox1.Location = new Point(5, 94);
+            comboBox1.Location = new Point(5, 112);
             comboBox1.Margin = new Padding(3, 2, 3, 2);
             comboBox1.Name = "comboBox1";
             comboBox1.Size = new Size(265, 23);
@@ -220,7 +220,7 @@
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(5, 127);
+            label4.Location = new Point(5, 155);
             label4.Name = "label4";
             label4.Size = new Size(114, 15);
             label4.TabIndex = 1;
@@ -229,7 +229,7 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(5, 74);
+            label3.Location = new Point(5, 95);
             label3.Name = "label3";
             label3.Size = new Size(52, 15);
             label3.TabIndex = 1;
@@ -238,7 +238,7 @@
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(303, 22);
+            label5.Location = new Point(326, 30);
             label5.Name = "label5";
             label5.Size = new Size(28, 15);
             label5.TabIndex = 1;
@@ -247,7 +247,7 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(5, 21);
+            label2.Location = new Point(5, 30);
             label2.Name = "label2";
             label2.Size = new Size(68, 15);
             label2.TabIndex = 1;
@@ -255,7 +255,7 @@
             // 
             // textBox1
             // 
-            textBox1.Location = new Point(5, 43);
+            textBox1.Location = new Point(5, 56);
             textBox1.Margin = new Padding(3, 2, 3, 2);
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(265, 23);
@@ -265,7 +265,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(904, 484);
+            ClientSize = new Size(1175, 522);
             Controls.Add(groupBox1);
             Controls.Add(btnPrintaj);
             Controls.Add(dgvPoruke);
@@ -274,7 +274,6 @@
             Controls.Add(label1);
             Margin = new Padding(3, 2, 3, 2);
             Name = "frmPorukeIB180079";
-            StartPosition = FormStartPosition.CenterScreen;
             Text = "frmPorukeIB180079";
             Load += frmPorukeIB180079_Load;
             ((System.ComponentModel.ISupportInitialize)dgvPoruke).EndInit();

@@ -119,12 +119,12 @@ namespace DLWMS.WinForms.IspitIB180079
             var odabraniStudentPredmet = studentiPredmeti[e.RowIndex];
 
 
-            if(e.ColumnIndex == 5)
+            if (e.ColumnIndex == 5)
             {
 
                 frmPorukeIB180079 frmPoruke = new frmPorukeIB180079(odabraniStudentPredmet.Student); // kreiranje forme
                 frmPoruke.ShowDialog();  // otvara formu
-                
+
             }
 
 

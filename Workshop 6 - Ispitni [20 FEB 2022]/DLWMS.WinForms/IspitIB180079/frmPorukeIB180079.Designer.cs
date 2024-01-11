@@ -44,17 +44,17 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(12, 18);
+            label1.Location = new Point(10, 14);
             label1.Name = "label1";
-            label1.Size = new Size(121, 20);
+            label1.Size = new Size(99, 15);
             label1.TabIndex = 0;
             label1.Text = "Poruke studenta :";
             // 
             // lblStudent
             // 
-            lblStudent.Location = new Point(139, 18);
+            lblStudent.Location = new Point(122, 14);
             lblStudent.Name = "lblStudent";
-            lblStudent.Size = new Size(342, 20);
+            lblStudent.Size = new Size(299, 15);
             lblStudent.TabIndex = 0;
             // 
             // dgvPoruke
@@ -63,13 +63,14 @@
             dgvPoruke.AllowUserToDeleteRows = false;
             dgvPoruke.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgvPoruke.Columns.AddRange(new DataGridViewColumn[] { Predmet, Sadrzaj, Slika, Validnost, Brisi });
-            dgvPoruke.Location = new Point(12, 54);
+            dgvPoruke.Location = new Point(10, 40);
+            dgvPoruke.Margin = new Padding(3, 2, 3, 2);
             dgvPoruke.Name = "dgvPoruke";
             dgvPoruke.ReadOnly = true;
             dgvPoruke.RowHeadersWidth = 51;
             dgvPoruke.RowTemplate.Height = 29;
             dgvPoruke.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            dgvPoruke.Size = new Size(1014, 272);
+            dgvPoruke.Size = new Size(887, 204);
             dgvPoruke.TabIndex = 1;
             // 
             // Predmet
@@ -118,33 +119,37 @@
             // 
             // button1
             // 
-            button1.Location = new Point(875, 342);
+            button1.Location = new Point(766, 256);
+            button1.Margin = new Padding(3, 2, 3, 2);
             button1.Name = "button1";
-            button1.Size = new Size(151, 29);
+            button1.Size = new Size(132, 22);
             button1.TabIndex = 2;
             button1.Text = "Printaj";
             button1.UseVisualStyleBackColor = true;
             // 
             // button2
             // 
-            button2.Location = new Point(875, 19);
+            button2.Location = new Point(766, 14);
+            button2.Margin = new Padding(3, 2, 3, 2);
             button2.Name = "button2";
-            button2.Size = new Size(151, 29);
+            button2.Size = new Size(132, 22);
             button2.TabIndex = 2;
             button2.Text = "Nova poruka";
             button2.UseVisualStyleBackColor = true;
             // 
             // frmPorukeIB180079
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1038, 386);
+            ClientSize = new Size(908, 290);
             Controls.Add(button2);
             Controls.Add(button1);
             Controls.Add(dgvPoruke);
             Controls.Add(lblStudent);
             Controls.Add(label1);
+            Margin = new Padding(3, 2, 3, 2);
             Name = "frmPorukeIB180079";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "frmPorukeIB180079";
             Load += frmPorukeIB180079_Load;
             ((System.ComponentModel.ISupportInitialize)dgvPoruke).EndInit();

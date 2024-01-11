@@ -36,11 +36,11 @@ namespace DLWMS.WinForms.IspitIB180079
         {
             poruke = db.StudentiPorukeIB180079
                 .Include("Predmet").Include("Student")
-                .Where(x=> x.StudentId == student.Id)
+                .Where(x => x.StudentId == student.Id)
                 .ToList();
 
 
-            if(poruke != null)
+            if (poruke != null)
             {
 
                 dgvPoruke.DataSource = null;

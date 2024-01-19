@@ -28,30 +28,30 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
-            this.SuspendLayout();
+            reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
+            SuspendLayout();
             // 
             // reportViewer1
             // 
-            this.reportViewer1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.reportViewer1.LocalReport.ReportEmbeddedResource = "DLWMS.WinForms.Izvjestaji.rptUvjerenje.rdlc";
-            this.reportViewer1.Location = new System.Drawing.Point(0, 0);
-            this.reportViewer1.Name = "ReportViewer";
-            this.reportViewer1.ServerReport.BearerToken = null;
-            this.reportViewer1.Size = new System.Drawing.Size(555, 382);
-            this.reportViewer1.TabIndex = 0;
+            reportViewer1.Dock = DockStyle.Fill;
+            reportViewer1.LocalReport.ReportEmbeddedResource = "DLWMS.WinForms.Izvjestaji.rptUvjerenje.rdlc";
+            reportViewer1.Location = new Point(0, 0);
+            reportViewer1.Name = "ReportViewer";
+            reportViewer1.ServerReport.BearerToken = null;
+            reportViewer1.Size = new Size(817, 439);
+            reportViewer1.TabIndex = 0;
             // 
             // frmIzvjestaji
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(555, 382);
-            this.Controls.Add(this.reportViewer1);
-            this.Name = "frmIzvjestaji";
-            this.Text = "frmIzvjestaji";
-            this.Load += new System.EventHandler(this.frmIzvjestaji_Load);
-            this.ResumeLayout(false);
-
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(817, 439);
+            Controls.Add(reportViewer1);
+            Name = "frmIzvjestaji";
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "frmIzvjestaji";
+            Load += frmIzvjestaji_Load;
+            ResumeLayout(false);
         }
 
         #endregion

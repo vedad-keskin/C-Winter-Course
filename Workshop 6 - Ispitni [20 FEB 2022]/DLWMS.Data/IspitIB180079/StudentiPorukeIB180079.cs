@@ -13,9 +13,9 @@ namespace DLWMS.Data.IspitIB180079
         public Student Student { get; set; }
         public int PredmetId { get; set; }
         public PredmetiIB180079 Predmet { get; set; }
-
         public DateTime Validnost { get; set; }
         public string Sadrzaj { get; set; }
         public byte[] Slika { get; set; }
+
     }
 }

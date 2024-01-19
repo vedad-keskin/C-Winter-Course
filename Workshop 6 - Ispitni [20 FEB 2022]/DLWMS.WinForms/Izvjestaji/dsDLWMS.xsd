@@ -11,7 +11,19 @@
   </xs:annotation>
   <xs:element name="dsDLWMS" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="dsDLWMS" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="dsDLWMS">
     <xs:complexType>
-      <xs:choice minOccurs="0" maxOccurs="unbounded" />
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="dsPoruke" msprop:Generator_RowEvHandlerName="dsPorukeRowChangeEventHandler" msprop:Generator_RowDeletedName="dsPorukeRowDeleted" msprop:Generator_RowDeletingName="dsPorukeRowDeleting" msprop:Generator_RowEvArgName="dsPorukeRowChangeEvent" msprop:Generator_TablePropName="dsPoruke" msprop:Generator_RowChangedName="dsPorukeRowChanged" msprop:Generator_RowChangingName="dsPorukeRowChanging" msprop:Generator_TableClassName="dsPorukeDataTable" msprop:Generator_RowClassName="dsPorukeRow" msprop:Generator_TableVarName="tabledsPoruke" msprop:Generator_UserTableName="dsPoruke">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="RB" msprop:Generator_ColumnPropNameInRow="RB" msprop:Generator_ColumnPropNameInTable="RBColumn" msprop:Generator_ColumnVarNameInTable="columnRB" msprop:Generator_UserColumnName="RB" type="xs:string" minOccurs="0" />
+              <xs:element name="Predmet" msprop:Generator_ColumnPropNameInRow="Predmet" msprop:Generator_ColumnPropNameInTable="PredmetColumn" msprop:Generator_ColumnVarNameInTable="columnPredmet" msprop:Generator_UserColumnName="Predmet" type="xs:string" minOccurs="0" />
+              <xs:element name="Sadrzaj" msprop:Generator_ColumnPropNameInRow="Sadrzaj" msprop:Generator_ColumnPropNameInTable="SadrzajColumn" msprop:Generator_ColumnVarNameInTable="columnSadrzaj" msprop:Generator_UserColumnName="Sadrzaj" type="xs:string" minOccurs="0" />
+              <xs:element name="BrojZnakova" msprop:Generator_ColumnPropNameInRow="BrojZnakova" msprop:Generator_ColumnPropNameInTable="BrojZnakovaColumn" msprop:Generator_ColumnVarNameInTable="columnBrojZnakova" msprop:Generator_UserColumnName="BrojZnakova" type="xs:string" minOccurs="0" />
+              <xs:element name="Validnost" msprop:Generator_ColumnPropNameInRow="Validnost" msprop:Generator_ColumnPropNameInTable="ValidnostColumn" msprop:Generator_ColumnVarNameInTable="columnValidnost" msprop:Generator_UserColumnName="Validnost" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
     </xs:complexType>
   </xs:element>
 </xs:schema>

@@ -26,12 +26,11 @@ namespace DLWMS.WinForms.IspitIB180079
         {
             dgvStudentiPredmeti.AutoGenerateColumns = false;
             UcitajSve();
-
         }
 
         private void UcitajSve()
         {
-            studentiPredmeti = db.StudentiPredmeti.Include("Student").Include("Predmet").ToList();
+            studentiPredmeti = db.StudentiPredmeti.Include("Predmet").Include("Student").ToList();
 
             if (studentiPredmeti != null)
             {
@@ -42,34 +41,20 @@ namespace DLWMS.WinForms.IspitIB180079
         }
         private void UcitajStudente()
         {
-            // 1. textbox --> moze baciti null
+            // combobox rucni moze baciti null
 
-
-            // 2. combobox
-            // 2.1 rucni combobox --> on moze baciti null 
-
-            var ocjenaOd = cbOcjenaOd.SelectedItem == null ? 6 : int.Parse(cbOcjenaOd.SelectedItem.ToString()); // "6" "7" "8"
-
+            var ocjenaOd = cbOcjenaOd.SelectedItem == null ? 6 : int.Parse(cbOcjenaOd.SelectedItem.ToString());  // 6 7
             var ocjenaDo = cbOcjenaDo.SelectedItem == null ? 10 : int.Parse(cbOcjenaDo.SelectedItem.ToString());
 
 
+            // dtp ne mogu baciti null
 
-            // 2.2 iz baze combobox --> ne moze baciti null --> prvi element iz baze
+            var datumOd = dtpDatumOd.Value;
+            var datumDo = dtpDatumDo.Value;
 
-
-
-            // 3. datetimepicker --> ne moze baciti null --> dft je danasnji datum
-
-            var DatumOd = dtpDatumOd.Value;
-            var DatumDo = dtpDatumDo.Value;
-
-            // 4. checkbox --> ne moze baciti null --> false
-
-
-            studentiPredmeti = db.StudentiPredmeti.
-                Include("Student").Include("Predmet")
-                .Where(x => (x.Ocjena >= ocjenaOd && x.Ocjena <= ocjenaDo) &&
-                (x.Datum >= DatumOd && x.Datum <= DatumDo))
+            studentiPredmeti = db.StudentiPredmeti.Include("Student").Include("Predmet")
+                .Where(x => (x.Datum >= datumOd && x.Datum <= datumDo) &&
+                (x.Ocjena >= ocjenaOd && x.Ocjena <= ocjenaDo))
                 .ToList();
 
             if (studentiPredmeti != null)
@@ -78,14 +63,10 @@ namespace DLWMS.WinForms.IspitIB180079
                 dgvStudentiPredmeti.DataSource = null;
                 dgvStudentiPredmeti.DataSource = studentiPredmeti;
             }
-
             if (studentiPredmeti.Count() == 0)
             {
-                // "tekst", "tekst zaglavlja", buttoni, icone
-                MessageBox.Show($"U periodu od {DatumOd} – {DatumDo}. godine ne postoje evidentirane ocjene u opsegu od {ocjenaOd} do {ocjenaDo} za bilo kojeg studenta.", "Informacija", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show($"U periodu od {datumOd} - {datumDo}. godine ne postoje evidentirane ocjene u opsegu od {ocjenaOd} do {ocjenaDo} za bilo kojeg studenta.", "Informacija", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
-
-
 
         }
 
@@ -118,15 +99,11 @@ namespace DLWMS.WinForms.IspitIB180079
 
             var odabraniStudentPredmet = studentiPredmeti[e.RowIndex];
 
-
-            if (e.ColumnIndex == 5)
+            if(e.ColumnIndex == 5)
             {
-
-                frmPorukeIB180079 frmPoruke = new frmPorukeIB180079(odabraniStudentPredmet.Student); // kreiranje forme
-                frmPoruke.ShowDialog();  // otvara formu
-
+                frmPorukeIB180079 frmPoruke = new frmPorukeIB180079(odabraniStudentPredmet.Student);
+                frmPoruke.ShowDialog();
             }
-
 
         }
     }

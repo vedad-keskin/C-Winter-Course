@@ -25,21 +25,10 @@ namespace DLWMS.Data
             optionsBuilder.UseSqlite(dbPutanja);
         }
        
-
-
-
-
-
-
-
         public DbSet<Student> Studenti { get; set; }
         public DbSet<Spol> Spolovi { get; set; }
         public DbSet<PredmetiIB180079> Predmeti { get; set; }
         public DbSet<StudentiPredmetiIB180079> StudentiPredmeti { get; set; }
         public DbSet<StudentiPorukeIB180079> StudentiPorukeIB180079 { get; set; }
-
-
-
-
     }
 }
